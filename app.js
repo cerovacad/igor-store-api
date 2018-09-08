@@ -13,6 +13,7 @@ const mongoose = require("mongoose");
 // const expressValidator = require("express-validator");
 const expressStatusMonitor = require("express-status-monitor");
 // const multer = require("multer");
+const cors = require('cors')
 
 //setup multer middleware
 // const upload = multer({ dest: path.join(__dirname, "uploads") });
@@ -27,6 +28,8 @@ const productsController = require("./controllers/product");
 
 //initialize express app
 const app = express();
+
+app.use(cors())
 
 //connect to mongodb
 mongoose.connect(

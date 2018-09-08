@@ -2,8 +2,7 @@
 /build
 # /public
 /client
-# .env
-# mock-db.json
+.env
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
